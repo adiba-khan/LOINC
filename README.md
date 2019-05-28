@@ -1,5 +1,5 @@
-# LOINC
-Access LOINC APIs to extract descriptions of LOINC codes
+# Access LOINC API
+Access LOINC API to extract descriptions of LOINC codes. Their API is in beta status.
 
 LOINC is a set of standard terminology for various medical contexts. It is prevalent when coding laboratory measurements. 
 
