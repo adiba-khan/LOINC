@@ -1,16 +1,13 @@
-#import relevant libraries
+# import relevant libraries
 from urllib.request import urlopen
 from urllib.parse import quote
 import requests
 import json
 
-#parse input json
-with open(r'patient_data.json') as f:
-    my_json = json.load(f)
-
+# beta version - may need to be updated 
 baseUrl = 'https://fhir.loinc.org/CodeSystem/$lookup?system=http://loinc.org&code='
 
-#define function to access API using valid credentials
+# define function to access API using valid credentials
 def getLOINCbyCode(LOINC):
 	url = baseUrl + LOINC
 	username = #'your username'
