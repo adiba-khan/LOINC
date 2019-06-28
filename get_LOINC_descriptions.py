@@ -10,8 +10,9 @@ baseUrl = 'https://fhir.loinc.org/CodeSystem/$lookup?system=http://loinc.org&cod
 # define function to access API using valid credentials
 def getLOINCbyCode(LOINC):
 	url = baseUrl + LOINC
-	username = #'your username'
-	password = #'your password'
+	username = #your-username
+	password = #your-password
+	
 	r = requests.get(url, auth=(username, password))
 	page = r.content
 	data = json.loads(page.decode('utf-8'))
